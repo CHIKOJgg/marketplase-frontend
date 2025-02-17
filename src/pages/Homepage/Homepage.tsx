@@ -1,13 +1,15 @@
 import { Helmet } from 'react-helmet';
 import { TestDiv } from '../styled';
+import { PageWrapper } from 'App.styled';
 const Homepage: React.FunctionComponent = () => {
   return (
     <>
       <Helmet>
         <title>main</title>
       </Helmet>
-      <h1>Homepage</h1>
-      <TestDiv />
+      <PageWrapper>
+        <h1>Main Page</h1>
+      </PageWrapper>
     </>
   );
 };
